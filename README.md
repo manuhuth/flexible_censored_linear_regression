@@ -1,2 +1,2 @@
-# flexible_censored_linear_regression
-Censored linear regression models allowinf gor left and right censoring on an observational level.
+# Flexible Censored Linear Regression
+Censored linear regression models allowing for left and right censoring on an observational level. 
