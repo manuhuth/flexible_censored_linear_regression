@@ -169,14 +169,4 @@ function get_significance_stars(p_values)
 
     return significance
 end
-#-----------do analysis--------------------------------------------------------
 
-global formula = "..."
-global fit = censored_regression_flexible(formula)
-
-global cens_predicted = transform_prediciton!(fit["data"], fit["prediction"], "cens_left",  "cens_right", Array{Float64}(undef, length(fit["y"])))
-
-plot(fit["y"], cens_predicted, seriestype= :scatter,
-    xlabel="True values", ylabel = "Fitted values",
-    )
-pretty_table(fit["table"])
